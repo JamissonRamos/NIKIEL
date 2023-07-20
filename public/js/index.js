@@ -9,7 +9,7 @@ checkLogged();
 
 //#region Faze login
 frmLogin.addEventListener('submit', (e) => {
-
+    
     e.preventDefault();
 
      // Obtém os valores dos campos do formulário
@@ -22,7 +22,7 @@ frmLogin.addEventListener('submit', (e) => {
 
     if (!account){
 
-        alert("Opps1! Verifique o seu usuário ou sua senha.")
+        alert("Opps! Verifique o seu usuário ou sua senha.")
         return;
     }
 

@@ -51,7 +51,7 @@ function checkLogged() {
 
     if(!logged) {
 
-        window.location.href = "/NIKIEL/public/index.html";
+        window.location.href = "index.html";
         return
     }
 
@@ -72,7 +72,7 @@ function logout() {
     sessionStorage.removeItem("logged");
     localStorage.removeItem("session");
 
-    window.location.href = "index.html";
+    window.location.href = "index.html"; ///NIKIEL/public/index.html
     return
 }
 
