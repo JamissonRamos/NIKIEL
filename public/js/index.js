@@ -3,10 +3,12 @@ const myModal = new bootstrap.Modal("#register-modal");
 let logged = sessionStorage.getItem("logged");
 const session = localStorage.getItem("session");
 
+const frmLogin = document.getElementById('login-form');
+
 checkLogged();
 
 //#region Faze login
-document.addEventListener('submit', (e) => {
+frmLogin.addEventListener('submit', (e) => {
 
     e.preventDefault();
 
@@ -20,7 +22,7 @@ document.addEventListener('submit', (e) => {
 
     if (!account){
 
-        alert("Opps! Verifique o seu usuário ou sua senha.")
+        alert("Opps1! Verifique o seu usuário ou sua senha.")
         return;
     }
 
@@ -131,7 +133,7 @@ function saveSession(data, saveSession)
 
     const saveAccount = (data) => {
 
-        console.log(data)
+        //console.log(data)
 
         //Incluindo o dados no localStorage
         localStorage.setItem(data.login, JSON.stringify(data))
